@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--    index.HTML created by 
+            Author: Jacques Viviers for Project Responsive Web Design Navigation
+    -->
+    <head>
+        <!-- Title of Website -->
+        <title>Responsive Navigation</title>
+        <!-- Charset and responsive meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon links and manifest -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+        <link rel="manifest" href="img/icons/site.webmanifest">
+        <!-- Cascading style sheet and javascript module -->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <!-- Body section starting (creativity :-) ) -->    
+    <body onload="navList()">
+        <!-- Navigation and Header Section -->        
+        <nav id="navBar" > 
+            <header>
+                <span>Jacques Viviers RWD Navigation</span>
+            </header>
+            <!-- Box element for bigger media links [inline] -->
+            <div id="linkcont" ></div>
+            <!-- Boxes and button for smaller media links [dropdown]-->
+            <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">MENU</button>    
+            <div  id="myDropdown" onload="navList()" class="dropdown-content"></div>
+            </div>
+        </nav>
+    </body>
+</html>
+
+<!-- HTML create by Jacques Viviers for future use [GIT REPOSITORY] -->

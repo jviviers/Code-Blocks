@@ -1,0 +1,145 @@
+/*
+    Main CSS for project Responsive Web Design Navigation
+    Author     : Jacques Viviers
+*/
+/* intresting font webkits added [see fonts folder]*/
+@font-face {
+    font-family: 'New-Wishes';
+    src:url('../fonts/New-Wishes.ttf.woff') format('woff'),
+        url('../fonts/New-Wishes.ttf.svg#New-Wishes') format('svg'),
+        url('../fonts/New-Wishes.ttf.eot'),
+        url('../fonts/New-Wishes.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Carlos-Caffeinated-Bold';
+    src:url('../fonts/Carlos-Caffeinated-Bold.ttf.woff') format('woff'),
+        url('../fonts/Carlos-Caffeinated-Bold.ttf.svg#Carlos-Caffeinated-Bold') format('svg'),
+        url('../fonts/Carlos-Caffeinated-Bold.ttf.eot'),
+        url('../fonts/Carlos-Caffeinated-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Desyrel';
+    src:url('../fonts/Desyrel.ttf.woff') format('woff'),
+        url('../fonts/Desyrel.ttf.svg#Desyrel') format('svg'),
+        url('../fonts/Desyrel.ttf.eot'),
+        url('../fonts/Desyrel.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+/* Setting body element margin to 0; */
+body{
+    margin: 0;
+}
+/* Creating box element for head and navigation */
+#navBar{
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    width: 100vw;
+    background-color: #005;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 0;
+}
+/* Set header element properties for site name / description. */
+header{
+    border-bottom: solid;
+    border-color: white;
+    border-width: 1px;
+    padding-left: 3.5%;
+    padding-top: 0%;
+    padding-bottom: 0;
+    margin:0;
+    color: black;
+    background-color: white;
+    font-family: Carlos-Caffeinated-Bold;
+    font-size: 200%;
+}
+/* Setting box element for Javascript to add links inline for bigger displays */
+#linkcont{
+    display: inline;
+    width:80%;
+    float: left;
+}
+/* Displays javascript added list items inline for navigation */
+li{
+    display: inline;
+    margin:1%;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* navigat links decoration */
+a:link, a:visited, a:active {
+        text-decoration: none;  
+        color: white;      
+}
+a:hover {
+        text-decoration: none;    
+        color: white;
+} 
+/* inline link hover and focus */
+#linkcont li:hover, li:focus {
+    background-color: blue; 
+}
+/* Custom Dropdown Button */
+.dropbtn {
+  background-color: #005;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: blue;
+}
+/* The container to position the dropdown content box */
+.dropdown {
+  position: relative;
+  display: none;
+}
+/* Dropdown Content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right:0%;
+  background-color: darkblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Custom links inside the dropdown */
+.dropdown-content a {
+  color: whitesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Dropdown links color on hover */
+.dropdown-content a:hover {
+    background-color: blue
+}
+/* myStyle for javascript to show contents (dropdown)) */
+.show {display:block;}
+
+/* Added breakpoint to change inline links to dropdown for smaller screens */ 
+@media only screen and (max-width: 850px) {
+    /* Remove inline Links */
+    #linkcont{display: none;}
+    /* Show dropdown Menu Button */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float:right;
+}  
+} 
+/* CSS create by Jacques Viviers for future use [GIT REPOSITORY] */
